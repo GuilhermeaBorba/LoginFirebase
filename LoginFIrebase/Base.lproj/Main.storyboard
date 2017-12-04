@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1eV-Pc-rmW">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="SIZ-wf-t3w">
+            <objects>
+                <viewController storyboardIdentifier="Login" id="1eV-Pc-rmW" customClass="LoginVC" customModule="LoginFIrebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6iZ-L3-dZL">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="pyb-oF-ZSG">
+                                <rect key="frame" x="341" y="261" width="343" height="246"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zXc-ds-raW" customClass="UITextFieldX" customModule="LoginFIrebase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="78"/>
+                                        <color key="backgroundColor" red="0.12679158830000001" green="0.72660655549999997" blue="0.62828947369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cWE-fK-scd" customClass="UITextFieldX" customModule="LoginFIrebase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="84" width="343" height="78"/>
+                                        <color key="backgroundColor" red="0.12679158830000001" green="0.72660655549999997" blue="0.62828947369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhl-0U-3nJ" customClass="UIButtonX" customModule="LoginFIrebase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="168" width="343" height="78"/>
+                                        <color key="backgroundColor" red="0.46269971804511278" green="0.97016891814712292" blue="0.60694543714810134" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <state key="normal" title="ENTRAR">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginAction:" destination="1eV-Pc-rmW" eventType="touchUpInside" id="Bn4-Gm-XaV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="246" id="8V3-gL-0dp"/>
+                                    <constraint firstAttribute="width" constant="343" id="MIX-TU-FZf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pyb-oF-ZSG" firstAttribute="centerY" secondItem="6iZ-L3-dZL" secondAttribute="centerY" id="1MK-dG-sVD"/>
+                            <constraint firstItem="pyb-oF-ZSG" firstAttribute="centerX" secondItem="6iZ-L3-dZL" secondAttribute="centerX" id="mZL-O6-yzv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NwP-Uo-rGX"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="zXc-ds-raW" id="idO-w8-Chp"/>
+                        <outlet property="passwordField" destination="cWE-fK-scd" id="Zvf-io-Gz8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sB4-0E-RMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-422" y="-98"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Inicio" id="BYZ-38-t0r" customClass="ViewController" customModule="LoginFIrebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aL0-XR-jbd" customClass="UIButtonX" customModule="LoginFIrebase" customModuleProvider="target">
+                                <rect key="frame" x="341" y="345" width="343" height="78"/>
+                                <color key="backgroundColor" red="0.46269971799999998" green="0.97016891810000006" blue="0.60694543710000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="cGn-ZW-uFF"/>
+                                    <constraint firstAttribute="height" constant="78" id="qTf-NB-eGH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="PDF">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btn_Pdf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zdX-fw-VMf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppp-Md-X3j" customClass="UIButtonX" customModule="LoginFIrebase" customModuleProvider="target">
+                                <rect key="frame" x="850" y="688" width="154" height="60"/>
+                                <color key="backgroundColor" red="0.39319490131578949" green="0.7375855064929876" blue="0.4754839709826878" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4Lz-35-pAv"/>
+                                    <constraint firstAttribute="width" constant="154" id="m0x-l9-NWh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="SAIR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yEt-Pb-adx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aL0-XR-jbd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DWO-5F-8gU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ppp-Md-X3j" secondAttribute="trailing" constant="20" id="fUI-y0-rdP"/>
+                            <constraint firstItem="aL0-XR-jbd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vNO-9m-qtS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ppp-Md-X3j" secondAttribute="bottom" constant="20" id="x5d-VZ-ATm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215.625" y="114.0625"/>
+        </scene>
+    </scenes>
+</document>
